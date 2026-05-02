@@ -1,0 +1,58 @@
+---
+import Layout from '../components/Layout.astro';
+---
+
+<Layout>
+  <div class="max-w-4xl mx-auto text-center">
+    <div class="mb-8">
+      <h1 class="text-5xl font-bold text-gray-900 mb-4">
+        Welcome to Coding Corgi! 🐕
+      </h1>
+      <p class="text-xl text-gray-600 mb-8">
+        Your friendly neighborhood corgi teaching software development and sharing learning materials
+      </p>
+    </div>
+
+    <div class="bg-corgi-cream border-2 border-corgi-orange rounded-lg p-8 mb-12">
+      <p class="text-lg text-gray-700 mb-6">
+        This is a space dedicated to learning, growing, and sharing knowledge about software development.
+        Whether you're a beginner or an experienced developer, there's always something new to discover!
+      </p>
+      <div class="flex gap-4 justify-center flex-wrap">
+        <a
+          href="/about"
+          class="bg-corgi-orange text-white px-6 py-3 rounded-lg font-semibold hover:bg-corgi-brown transition-colors"
+        >
+          About Me
+        </a>
+        <a
+          href="/posts"
+          class="bg-white border-2 border-corgi-orange text-corgi-orange px-6 py-3 rounded-lg font-semibold hover:bg-corgi-cream transition-colors"
+        >
+          Read Posts
+        </a>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6 text-left">
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-bold text-corgi-orange mb-3">📚 Learning Materials</h3>
+        <p class="text-gray-600">
+          Curated tutorials, guides, and insights to help you master software development concepts
+        </p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-bold text-corgi-orange mb-3">💡 Real-World Insights</h3>
+        <p class="text-gray-600">
+          Practical experiences and lessons learned from actual software development projects
+        </p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-bold text-corgi-orange mb-3">🚀 Best Practices</h3>
+        <p class="text-gray-600">
+          Industry-tested patterns, tips, and tricks to write better, cleaner code
+        </p>
+      </div>
+    </div>
+  </div>
+</Layout>

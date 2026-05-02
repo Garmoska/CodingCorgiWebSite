@@ -1,0 +1,73 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Coding Corgi',
+  description = 'Learning materials and insights from a software development corgi'
+} = Astro.props;
+
+const fullTitle = title === 'Coding Corgi' ? title : `${title} | Coding Corgi`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- SEO -->
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+
+    <link rel="stylesheet" href="/src/styles/global.css" />
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <header class="bg-corgi-orange text-white shadow-lg">
+      <nav class="container mx-auto px-4 py-6">
+        <div class="flex items-center justify-between">
+          <a href="/" class="text-2xl font-bold hover:text-corgi-cream transition-colors">
+            🐕 Coding Corgi
+          </a>
+          <ul class="flex gap-6 text-lg">
+            <li>
+              <a href="/about" class="hover:text-corgi-cream transition-colors">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="/posts" class="hover:text-corgi-cream transition-colors">
+                Posts
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+      <slot />
+    </main>
+
+    <footer class="bg-gray-100 mt-12">
+      <div class="container mx-auto px-4 py-6 text-center text-gray-600">
+        <p>&copy; {new Date().getFullYear()} Coding Corgi. Built with Astro 🚀</p>
+        <p class="text-sm mt-2">A corgi on a mission to teach software development, one wag at a time.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+---
+import Layout from '../components/Layout.astro';
+---
+
+<Layout title="About" description="Learn more about Evgeny Leonov and the Coding Corgi project">
+  <div class="max-w-3xl mx-auto">
+    <h1 class="text-4xl font-bold text-gray-900 mb-8">About Coding Corgi</h1>
+
+    <div class="bg-white rounded-lg shadow-md p-8 mb-8">
+      <div class="flex items-center gap-4 mb-6">
+        <div class="text-6xl">👨‍💻</div>
+        <div>
+          <h2 class="text-3xl font-bold text-corgi-orange">Evgeny Leonov</h2>
+          <p class="text-gray-600 text-lg">Software Developer</p>
+        </div>
+      </div>
+
+      <div class="prose max-w-none">
+        <p class="text-lg text-gray-700 leading-relaxed mb-4">
+          Welcome! This is a personal space where I share learning materials, insights,
+          and experiences from my journey in software development.
+        </p>
+
+        <p class="text-lg text-gray-700 leading-relaxed">
+          The Coding Corgi mascot represents the enthusiastic, loyal, and determined approach
+          I take toward learning and teaching software development. Just like a corgi — small
+          but mighty, friendly but focused!
+        </p>
+      </div>
+    </div>
+
+    <div class="bg-corgi-cream border-2 border-corgi-orange rounded-lg p-8">
+      <h3 class="text-2xl font-bold text-corgi-brown mb-4">What You'll Find Here</h3>
+      <ul class="space-y-3 text-gray-700">
+        <li class="flex items-start gap-3">
+          <span class="text-corgi-orange text-xl">•</span>
+          <span>Learning materials and tutorials on software development topics</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="text-corgi-orange text-xl">•</span>
+          <span>Posts originally shared on LinkedIn, collected and organized here</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="text-corgi-orange text-xl">•</span>
+          <span>Real-world experiences and lessons learned from development projects</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="text-corgi-orange text-xl">•</span>
+          <span>Best practices, tips, and insights to help you grow as a developer</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="mt-8 text-center">
+      <a
+        href="/posts"
+        class="inline-block bg-corgi-orange text-white px-8 py-3 rounded-lg font-semibold hover:bg-corgi-brown transition-colors"
+      >
+        Explore Posts →
+      </a>
+    </div>
+  </div>
+</Layout>

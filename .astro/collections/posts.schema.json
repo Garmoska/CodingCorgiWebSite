@@ -26,6 +26,12 @@
             }
           ]
         },
+        "coverImage": {
+          "type": "string"
+        },
+        "coverImageAlt": {
+          "type": "string"
+        },
         "linkedinUrl": {
           "type": "string",
           "format": "uri"

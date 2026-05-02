@@ -33,6 +33,8 @@ const posts = (await getCollection('posts')).sort(
             description={post.data.description}
             publishedDate={post.data.publishedDate}
             slug={post.slug}
+            coverImage={post.data.coverImage}
+            coverImageAlt={post.data.coverImageAlt ?? undefined}
             linkedinUrl={post.data.linkedinUrl ?? undefined}
             tags={post.data.tags ?? undefined}
           />

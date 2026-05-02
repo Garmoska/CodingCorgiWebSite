@@ -41,13 +41,46 @@ Posts are stored as MDX files in `src/content/posts/`. To add a new post:
 title: "Your Post Title"
 description: "Brief description for preview and SEO"
 publishedDate: 2026-05-02
+coverImage: ./_images/your-image.jpg         # optional
+coverImageAlt: "Description of the image"    # optional
 linkedinUrl: "https://linkedin.com/posts/your-url" # optional
-tags: ["javascript", "tutorial"] # optional
+tags: ["javascript", "tutorial"]             # optional
 ---
 ```
 
 3. Write your content in Markdown below the frontmatter
 4. The post will automatically appear on the site!
+
+### Adding Images to Posts
+
+**Cover Images** (shown in post cards and at the top of posts):
+
+1. Save your image to `src/content/posts/_images/`
+2. Reference it in frontmatter: `coverImage: ./_images/your-image.jpg`
+3. Add alt text: `coverImageAlt: "Description of the image"`
+
+**Inline Images** (within post content):
+
+```mdx
+---
+title: "Post with Images"
+coverImage: ./_images/cover.jpg
+---
+
+import { Image } from 'astro:assets';
+import myImage from './_images/inline-image.jpg';
+
+# My Post
+
+Some text before the image...
+
+<Image src={myImage} alt="Description" class="rounded-lg" />
+
+More text after the image...
+```
+
+**Supported formats**: JPG, PNG, WebP, SVG
+**Automatic optimization**: Astro automatically optimizes images for performance
 
 ### Example Post Structure
 
@@ -56,6 +89,8 @@ tags: ["javascript", "tutorial"] # optional
 title: "Understanding JavaScript Closures"
 description: "A practical guide to closures with real-world examples"
 publishedDate: 2026-05-02
+coverImage: ./_images/closures-cover.jpg
+coverImageAlt: "Diagram showing JavaScript closure scope"
 linkedinUrl: "https://linkedin.com/posts/example"
 tags: ["javascript", "fundamentals"]
 ---
@@ -79,6 +114,7 @@ src/
 ├── content/
 │   ├── config.ts            # Content Collections schema
 │   └── posts/               # Your MDX blog posts
+│       ├── _images/         # Images for your posts
 │       └── welcome.mdx      # Sample post
 ├── pages/
 │   ├── index.astro          # Home page

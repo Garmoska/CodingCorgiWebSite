@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#E67E22"/>
+  <text x="400" y="200" font-size="48" text-anchor="middle" fill="white" font-family="Arial, sans-serif">
+    Sample Post Image
+  </text>
+  <text x="400" y="250" font-size="24" text-anchor="middle" fill="#FFF8DC" font-family="Arial, sans-serif">
+    Replace with your LinkedIn post images
+  </text>
+</svg>

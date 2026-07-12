@@ -1,0 +1,12 @@
+# AI Pricing
+
+Date: 20-Apr-2026
+
+## Text
+
+“We are standing on the shoulders of giants”… and borrow their lamps [and ideas].
+Actually, I'd like to draw attention again to the extremely volatile pricing policies of AI vendors. Of course, the market itself is still in its infancy, so nothing else can be expected.
+Vendors encourage the creation of multi-agent systems. However, agent usage has been billed separately, which adds an extra fee to the cost of use. Keep in mind that vendors can raise prices for enterprise clients at any time.
+Therefore, in my opinion, as an engineer, it makes more sense to create tools using AI and use them instead of agents. Because you only pay tokens to create the tool once, and then it works for free (and yields predictably). Meanwhile, using a subagent requires a constant extra fee.
+
+P.S. We, business, and the vendor have conflicting interests in this regard. We need reliable, affordable solutions whose prices we can predict over the long term, while the AI vendor needs to sell us as many tokens as possible.

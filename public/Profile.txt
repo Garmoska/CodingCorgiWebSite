@@ -1,0 +1,100 @@
+Contact
+Prague, the Czech Republic
++420777364830 (Mobile)
+leonov.eugene@gmail.com
+www.linkedin.com/in/leonoveugene(LinkedIn)
+Top Skills
+Borland Delphi
+Turbo Pascal
+Public Health
+
+
+Languages
+Russian (Native or Bilingual)
+Czech (Limited Working)
+English (Full Professional)
+
+
+Publications
+The Temptation of Saint Tikhon
+The Mystery of the Coral City
+Decision making based on fuzzylogic models and algorithms ofimage processing in Machinelearning technology (subject area isstock market assets management formetallurgical facilities)
+The Letter for Elisa
+How the Hunter looked for the Sun
+
+
+
+ Eugene Leonov, Ph.D.
+Assoc. Dir, Product Technical Lead at MSD
+Prague, Czechia
+Summary
+Senior Software Engineer and Product Tech Lead with 25+ years’experience delivering solutions in healthcare, public health, andpharma
+Experience
+MSD Czech Republic
+10 years 8 months
+Assoc. Dir, Product Technical Lead
+January 2025 - Present (1 year 7 months)Prague, Czechia
+Leading a team of engineers and scientists to support, develop, and integrateapplications for Merck Research Laboratories.
+
+ 
+
+Senior Scientific Software Engineer
+December 2015 - January 2025 (9 years 2 months)Prague, Czechia
+Building and supporting scientific applications for Merck ResearchLaboratories.
+
+ 
+
+Cardio Control Ltd
+Co-Founder & Chief Technology Officer (CTO)
+January 2012 - November 2015 (3 years 11 months)Moscow
+I co-founded an innovative company focused on home ECG devices andclinical-grade ECG signal processing. We integrated results into a holistichealth model delivered via a web application, combining instrumental andlaboratory data (e.g., blood pressure, full blood count) to predict risk factorsand support general practitioners. I led both hardware and software streams—coordinating hardware engineers and developing the web application andbackend services. The company has since joined Nordawind and now sellsthese devices worldwide.
+
+ 
+
+Black & Veatch
+Senior Software Developer
+August 2009 - November 2015 (6 years 4 months)Moscow, Russian Federation
+I primarily develop the Electronic Integrated Disease Surveillance System(EIDSS), a multi-module platform for infectious disease surveillance acrosshuman, veterinary, and vector domains, with robust analytics and reporting.EIDSS is deployed in Georgia, Azerbaijan, Kazakhstan, and Iraq. I contributeto core modules (Human, Veterinary, Vector Surveillance), Flexible Forms,Custom Reports, Automated Updates, and the Android and web applicationsused by epidemiologists.
+
+ 
+
+MEDSI
+Senior Software Developer
+March 2008 - July 2009 (1 year 5 months)Moscow
+I served as a system architect and senior software developer on MEDSI’sMedical Information System, helping design and build a full-scale platformthat included scheduling, electronic patient records, ambulance workflows,imaging, document storage, and more.
+
+ 
+
+JSC SITRONICS
+Software Developer
+March 2007 - March 2008 (1 year 1 month)Moscow, Russian Federation
+I worked on the MGTS project, a large-scale fixed telecommunications initiativein Moscow, serving over 15 million users and spanning both hardware andsoftware components.
+
+ 
+
+National Research Center for Information Technology for ExtremeProblems (Ministry of Health)
+Team Lead
+March 2003 - March 2007 (4 years 1 month)Moscow, Russian Federation
+I contributed to two national-scale initiatives: an Electronic System forInfectious Disease Monitoring and Sanitary-Epidemiological Supervision, and aUniversal Monitoring System for the storage, transportation, and destruction ofchemical weapons. Starting as a researcher/junior developer and progressingto team lead within three years, I handled application development, taskdecomposition, planning, and team supervision. The infectious diseasesystem is deployed across 174 centers in the Russian Federation, whilethe chemical weapons health/environment monitoring system has operatedcontinuously since 2005 and now contains over 2.5 million cases. I alsosupported implementation at Object #1203 in Kambarka, Udmurtia.
+
+ 
+
+Art Access
+Software Developer
+July 2002 - November 2002 (5 months)Moscow
+Intern and Junior Software Developer
+
+ 
+
+Education
+National University of Science and Technology "MISIS"  (MoscowInstitute of Steel and Alloys)
+Ph.D. at Cognitive Science, Master at Microelectronics, Cognitive Science,Microelectronics · (1999 - 2009)
+
+ 
+
+ 
+
+
+
+
+

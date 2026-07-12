@@ -1,6 +1,4 @@
 ---
-import CorgiIcon from './CorgiIcon.astro';
-
 interface Props {
   title?: string;
   description?: string;
@@ -19,7 +17,8 @@ const fullTitle = title === 'Coding Corgi' ? title : `${title} | Coding Corgi`;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/corgi2-short.png" />
+    <link rel="apple-touch-icon" href="/corgi2-short.png" />
     <meta name="generator" content={Astro.generator} />
 
     <!-- SEO -->
@@ -39,26 +38,12 @@ const fullTitle = title === 'Coding Corgi' ? title : `${title} | Coding Corgi`;
     <link rel="stylesheet" href="/src/styles/global.css" />
   </head>
   <body class="min-h-screen flex flex-col">
-    <header class="bg-corgi-orange text-white shadow-lg">
-      <nav class="container mx-auto px-4 py-6">
-        <div class="flex items-center justify-between">
-          <a href="#about" class="text-2xl font-bold hover:text-corgi-cream transition-colors flex items-center gap-3">
-            <img src="/corgi2.png" alt="Coding Corgi" class="w-12 h-12 rounded-full object-cover border-2 border-white" />
-            Coding Corgi
-          </a>
-          <ul class="flex gap-6 text-lg">
-            <li>
-              <a href="#about" class="hover:text-corgi-cream transition-colors">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#posts" class="hover:text-corgi-cream transition-colors">
-                Posts
-              </a>
-            </li>
-          </ul>
-        </div>
+    <header class="bg-white border-b border-gray-200">
+      <nav class="container mx-auto px-4 py-5">
+        <a href="#about" class="inline-flex items-center gap-3 text-2xl font-bold text-gray-900 hover:text-corgi-orange transition-colors">
+          <img src="/corgi2-short.png" alt="Coding Corgi" class="w-12 h-12 rounded-full object-cover" />
+          Coding Corgi
+        </a>
       </nav>
     </header>
 

@@ -1,0 +1,37 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../components/Layout.astro';
+import PostCard from '../../components/PostCard.astro';
+
+const posts = (await getCollection('posts')).sort(
+  (a, b) => b.data.publishedDate.getTime() - a.data.publishedDate.getTime()
+);
+---
+
+<Layout title="Posts" description="All posts from Coding Corgi — software development insights, book notes, and LinkedIn thoughts.">
+  <section class="max-w-6xl mx-auto">
+    <h1 class="text-4xl font-bold text-gray-900 mb-8">All Posts</h1>
+
+    {posts.length === 0 ? (
+      <div class="bg-white rounded-lg shadow-md p-8 text-center border-2 border-dashed border-corgi-orange">
+        <div class="text-5xl mb-4">🐾</div>
+        <p class="text-xl text-gray-700">No posts yet — check back soon!</p>
+      </div>
+    ) : (
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {posts.map((post) => (
+          <PostCard
+            title={post.data.title}
+            description={post.data.description}
+            publishedDate={post.data.publishedDate}
+            slug={post.slug}
+            coverImage={post.data.coverImage}
+            coverImageAlt={post.data.coverImageAlt}
+            linkedinUrl={post.data.linkedinUrl}
+            tags={post.data.tags}
+          />
+        ))}
+      </div>
+    )}
+  </section>
+</Layout>

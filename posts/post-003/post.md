@@ -1,0 +1,11 @@
+# Attention to Detail
+
+Date: 24-Feb-2026
+
+## Text
+
+Hello everyone! I want my posts to be interesting for people who aren't too closely involved with programming. Today, we'll talk about attention to detail in software development. Of course, so many books have been written on this topic that you could pave the road from Lisbon to Vladivostok with them (there and back). Therefore, I will focus on only one aspect.
+To illustrate what I mean, let's look at a JavaScript example. I have seen many times that developers do not notice the difference among the three ways to declare variables: “var”, “let”, “” (means, no special word, “a = 10”).
+The language was created solely to support simple interaction on web pages, and in those distant times, no one could have imagined that hapless language would be used in complex applications in an unnatural way. Fate can be harsh!
+Yes, no one could have imagined that an application would include dozens of scripts written by different people who didn't coordinate their actions. And no one could have imagined that all the variables and functions they declared would be loaded into the runtime simultaneously. What could go wrong? For example, several authors declared variables with the same name, made them global (visible from every end of the application), and started manipulating them. The last variable or function loaded on the page wins. But what if the scripts are loaded dynamically? What if an author declared a global variable in one file, used it in another, but an extra JS file (added after the upgrade) with the same variable name exists in between?
+So, it's no coincidence that the Corgi dog in the picture is trying to catch global variables (”var”), but it's not very successful. It's best to limit the scope of variables as much as possible (”let” variable). And the best variable is a constant. We'll talk about this next time.

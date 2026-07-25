@@ -39,11 +39,15 @@ const fullTitle = title === 'Coding Corgi' ? title : `${title} | Coding Corgi`;
   </head>
   <body class="min-h-screen flex flex-col">
     <header class="bg-white border-b border-gray-200">
-      <nav class="container mx-auto px-4 py-5">
-        <a href="#about" class="inline-flex items-center gap-3 text-2xl font-bold text-gray-900 hover:text-corgi-orange transition-colors">
+      <nav class="container mx-auto px-4 py-5 flex items-center justify-between">
+        <a href="/" class="inline-flex items-center gap-3 text-2xl font-bold text-gray-900 hover:text-corgi-orange transition-colors">
           <img src="/corgi2-short.png" alt="Coding Corgi" class="w-12 h-12 rounded-full object-cover" />
           Coding Corgi
         </a>
+        <div class="flex items-center gap-6 text-base font-medium text-gray-700">
+          <a href="/posts" class="hover:text-corgi-orange transition-colors">Posts</a>
+          <a href="/comics" class="hover:text-corgi-orange transition-colors">Comics</a>
+        </div>
       </nav>
     </header>
 

@@ -11,7 +11,14 @@
       "Bash(node scripts/new-post.mjs)",
       "Bash(echo \"EXIT: $?\")",
       "Bash([ -f \"post-$i.$ext\" ])",
-      "Bash(mv post-__TRACKED_VAR__.__TRACKED_VAR__ post-00__TRACKED_VAR__.__TRACKED_VAR__)"
+      "Bash(mv post-__TRACKED_VAR__.__TRACKED_VAR__ post-00__TRACKED_VAR__.__TRACKED_VAR__)",
+      "Bash(npx astro *)",
+      "Bash(curl -sS -o /dev/null -w \"home %{http_code}\\\\n\" http://localhost:4321/)",
+      "Bash(curl -sS -o /dev/null -w \"comics %{http_code}\\\\n\" http://localhost:4321/comics)",
+      "Bash(curl -sS -o /dev/null -w \"deadline %{http_code}\\\\n\" http://localhost:4321/comics/deadline-corgi)",
+      "Bash(curl -sS http://localhost:4321/comics)",
+      "Bash(curl -sS http://localhost:4321/)",
+      "Bash(curl -sS http://localhost:4321/comics/deadline-corgi)"
     ]
   }
 }

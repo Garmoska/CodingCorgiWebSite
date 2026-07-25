@@ -1,0 +1,40 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../components/Layout.astro';
+import ComicCard from '../../components/ComicCard.astro';
+
+const comics = (await getCollection('comics')).sort(
+  (a, b) => b.data.publishedDate.getTime() - a.data.publishedDate.getTime()
+);
+---
+
+<Layout title="Comics" description="Hand-drawn corgi comics from Coding Corgi.">
+  <section class="max-w-6xl mx-auto">
+    <h1 class="text-4xl font-bold text-gray-900 mb-8">All Comics</h1>
+
+    {comics.length === 0 ? (
+      <div class="bg-white rounded-lg shadow-md p-8 text-center border-2 border-dashed border-corgi-orange">
+        <div class="text-5xl mb-4">🐾</div>
+        <p class="text-xl text-gray-700">No comics yet — check back soon!</p>
+      </div>
+    ) : (
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {comics.map((comic) => {
+          const firstPanel = comic.data.panels[0]!;
+          return (
+            <ComicCard
+              title={comic.data.title}
+              description={comic.data.description}
+              publishedDate={comic.data.publishedDate}
+              slug={comic.slug}
+              coverImage={comic.data.coverImage ?? firstPanel.image}
+              coverImageAlt={comic.data.coverImageAlt ?? firstPanel.alt}
+              panelCount={comic.data.panels.length}
+              tags={comic.data.tags}
+            />
+          );
+        })}
+      </div>
+    )}
+  </section>
+</Layout>

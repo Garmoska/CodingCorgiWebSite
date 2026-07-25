@@ -1,0 +1,59 @@
+---
+import { Image } from 'astro:assets';
+
+interface Props {
+  title: string;
+  description: string;
+  publishedDate: Date;
+  slug: string;
+  coverImage?: any;
+  coverImageAlt?: string | undefined;
+  panelCount: number;
+  tags?: string[] | undefined;
+}
+
+const { title, description, publishedDate, slug, coverImage, coverImageAlt, panelCount, tags } = Astro.props;
+
+const formattedDate = new Intl.DateTimeFormat('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric'
+}).format(publishedDate);
+---
+
+<article class="bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden">
+  <a href={`/comics/${slug}`} class="block group">
+    {coverImage && (
+      <div class="aspect-[4/5] w-full overflow-hidden bg-corgi-cream flex items-center justify-center relative">
+        <Image
+          src={coverImage}
+          alt={coverImageAlt || title}
+          class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+          widths={[400, 600, 800]}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 400px"
+        />
+        <span class="absolute top-3 right-3 bg-corgi-orange text-white text-xs font-semibold px-2.5 py-1 rounded-full shadow">
+          {panelCount} panels
+        </span>
+      </div>
+    )}
+    <div class="p-6">
+      <h2 class="text-2xl font-bold text-gray-900 mb-2 group-hover:text-corgi-orange transition-colors">
+        {title}
+      </h2>
+      <p class="text-gray-600 mb-4">{description}</p>
+      <div class="flex items-center justify-between text-sm text-gray-500">
+        <time datetime={publishedDate.toISOString()}>{formattedDate}</time>
+      </div>
+      {tags && tags.length > 0 && (
+        <div class="flex flex-wrap gap-2 mt-4">
+          {tags.map(tag => (
+            <span class="bg-corgi-cream text-corgi-brown text-xs font-semibold px-3 py-1 rounded-full">
+              {tag}
+            </span>
+          ))}
+        </div>
+      )}
+    </div>
+  </a>
+</article>

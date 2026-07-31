@@ -1,8 +1,8 @@
 ---
 title: "Deadline!"
-description: "A fairy godmother warns of a looming deadline. Panic, transformation, and a well-earned rest."
+description: "A fairy godmother warns of a looming deadline..."
 publishedDate: 2026-07-25
-tags: ["comic", "deadline", "corgi"]
+tags: ["comic"]
 ---
 
 # Panels (in reading order)

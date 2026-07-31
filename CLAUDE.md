@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Personal website for Coding Corgi - a blog for sharing learning materials, software development insights, and LinkedIn posts. Built with Astro 5, TypeScript, and Tailwind CSS. Generates a static site with MDX-based blog posts managed through Astro's Content Collections.
 
-**Site URL**: https://codingcorgi.dev
+**Site URL**: https://codingcorgi.co
 
 ## Essential Commands
 

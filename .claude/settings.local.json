@@ -18,7 +18,17 @@
       "Bash(curl -sS -o /dev/null -w \"deadline %{http_code}\\\\n\" http://localhost:4321/comics/deadline-corgi)",
       "Bash(curl -sS http://localhost:4321/comics)",
       "Bash(curl -sS http://localhost:4321/)",
-      "Bash(curl -sS http://localhost:4321/comics/deadline-corgi)"
+      "Bash(curl -sS http://localhost:4321/comics/deadline-corgi)",
+      "Bash(mkdir -p \"src/content/comics/_images/deadline-corgi\")",
+      "Bash(cp \"comics/comic-001/panel-1.jpg\" \"src/content/comics/_images/deadline-corgi/panel-1.jpg\")",
+      "Bash(cp \"comics/comic-001/panel-2.jpg\" \"src/content/comics/_images/deadline-corgi/panel-2.jpg\")",
+      "Bash(cp \"comics/comic-001/panel-3.jpg\" \"src/content/comics/_images/deadline-corgi/panel-3.jpg\")",
+      "Bash(cp \"comics/comic-001/panel-4.jpg\" \"src/content/comics/_images/deadline-corgi/panel-4.jpg\")",
+      "mcp__webstorm__create_new_file"
     ]
-  }
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "webstorm"
+  ]
 }

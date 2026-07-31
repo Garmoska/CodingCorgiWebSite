@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://codingcorgi.co/sitemap-index.xml

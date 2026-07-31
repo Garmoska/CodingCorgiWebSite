@@ -10,6 +10,7 @@ const {
 } = Astro.props;
 
 const fullTitle = title === 'Coding Corgi' ? title : `${title} | Coding Corgi`;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <!doctype html>
@@ -24,11 +25,13 @@ const fullTitle = title === 'Coding Corgi' ? title : `${title} | Coding Corgi`;
     <!-- SEO -->
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
 
     <!-- Open Graph -->
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -36,6 +39,10 @@ const fullTitle = title === 'Coding Corgi' ? title : `${title} | Coding Corgi`;
     <meta name="twitter:description" content={description} />
 
     <link rel="stylesheet" href="/src/styles/global.css" />
+
+    <!-- Cloudflare Web Analytics -->
+    <script is:inline type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "6b2b0d7b72914c5fbed5fbfc3cab27f3"}'></script>
+    <!-- End Cloudflare Web Analytics -->
   </head>
   <body class="min-h-screen flex flex-col">
     <header class="bg-white border-b border-gray-200">

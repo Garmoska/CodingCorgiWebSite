@@ -26,7 +26,7 @@ Each `comics/comic-NNN/` folder contains:
   2. **panel-2.jpg** — Another panel description
   3. **panel-3.jpg** — Final panel
   ```
-- `panel-1.jpg`, `panel-2.jpg`, etc. — the panel images in reading order.
+- `panel-3.jpg`, `panel-4.jpg`, etc. — the panel images in reading order.
 
 The staging format includes basic frontmatter (title, description, publishedDate, tags) and a body with a numbered list describing each panel. The descriptions contain visual details and dialogue/captions.
 
@@ -39,14 +39,14 @@ Create `src/content/comics/<slug>.mdx` with this frontmatter (schema in `src/con
 title: "Comic Title"
 description: "Brief description..."
 publishedDate: 2026-07-25
-coverImage: ./_images/<slug>/panel-1.jpg
+coverImage: ./_images/<slug>/panel-3.jpg
 coverImageAlt: "Short description of first panel"
 panels:
-  - image: ./_images/<slug>/panel-1.jpg
-    alt: "Expanded description with visual context and dialogue"
-  - image: ./_images/<slug>/panel-2.jpg
-    alt: "Description of second panel"
   - image: ./_images/<slug>/panel-3.jpg
+    alt: "Expanded description with visual context and dialogue"
+  - image: ./_images/<slug>/panel-4.jpg
+    alt: "Description of second panel"
+  - image: ./_images/<slug>/panel-5.jpg
     alt: "Description of final panel"
 tags: ["comic", "tag2"]
 ---
@@ -80,8 +80,8 @@ Copy panel images into a subfolder named after the slug:
 
 ```bash
 mkdir -p src/content/comics/_images/<slug>
-cp comics/comic-NNN/panel-1.jpg src/content/comics/_images/<slug>/panel-1.jpg
-cp comics/comic-NNN/panel-2.jpg src/content/comics/_images/<slug>/panel-2.jpg
+cp comics/comic-NNN/panel-3.jpg src/content/comics/_images/<slug>/panel-3.jpg
+cp comics/comic-NNN/panel-4.jpg src/content/comics/_images/<slug>/panel-4.jpg
 # ... repeat for all panels
 ```
 

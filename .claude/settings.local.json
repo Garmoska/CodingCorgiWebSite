@@ -24,7 +24,10 @@
       "Bash(cp \"comics/comic-001/panel-2.jpg\" \"src/content/comics/_images/deadline-corgi/panel-2.jpg\")",
       "Bash(cp \"comics/comic-001/panel-3.jpg\" \"src/content/comics/_images/deadline-corgi/panel-3.jpg\")",
       "Bash(cp \"comics/comic-001/panel-4.jpg\" \"src/content/comics/_images/deadline-corgi/panel-4.jpg\")",
-      "mcp__webstorm__create_new_file"
+      "mcp__webstorm__create_new_file",
+      "PowerShell(Resolve-DnsName *)",
+      "PowerShell(try { $r = Invoke-RestMethod -Uri \"https://rdap.nic.co/domain/codingcorgi.co\" -TimeoutSec 20; $r.entities | Where-Object { $_.roles -contains \"registrar\" } | ForEach-Object { \"Registrar: \" + $_.vcardArray[1][1][3] }; \"Status: \" + \\($r.status -join ', '\\); \"Name servers from RDAP: \" + \\(\\($r.nameservers | ForEach-Object { $_.ldhName }\\) -join ', '\\) } catch { \"RDAP failed: \" + $_.Exception.Message })",
+      "PowerShell(try { $r = Invoke-RestMethod -Uri \"https://rdap.org/domain/codingcorgi.co\" -TimeoutSec 25; $r.entities | Where-Object { $_.roles -contains \"registrar\" } | ForEach-Object { \"Registrar: \" + $_.vcardArray[1][1][3] }; \"Status: \" + \\($r.status -join ', '\\); \"NS from RDAP: \" + \\(\\($r.nameservers | ForEach-Object { $_.ldhName }\\) -join ', '\\) } catch { \"RDAP failed: \" + $_.Exception.Message })"
     ]
   },
   "enableAllProjectMcpServers": true,
